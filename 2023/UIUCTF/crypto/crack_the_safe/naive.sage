@@ -1,0 +1,20 @@
+from Crypto.Cipher import AES
+
+p = 4170887899225220949299992515778389605737976266979828742347
+x = 4118647916916386882780498772489142305911010811458739464304
+
+
+def crack_safe(key):
+    return (
+        pow(7, int.from_bytes(key, "big"), p)
+        == 0x49545B7D5204BD639E299BC265CA987FB4B949C461B33759
+    )
+
+
+Z = Zmod(p)
+key = discrete_log(Z(x), Z(7))
+print(key)
+
+ct = bytes.fromhex("ae7d2e82a804a5a2dcbc5d5622c94b3e14f8c5a752a51326e42cda6d8efa4696")
+assert crack_safe(key)
+print(AES.new(key, AES.MODE_ECB).decrypt(ct))

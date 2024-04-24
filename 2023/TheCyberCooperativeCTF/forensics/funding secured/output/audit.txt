@@ -1,0 +1,15 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Dec 16 16:03:55 2023
+Invocation: foremost 
+Output directory: /workspaces/ctf-problems/TheCyberCooperativeCTF_2023/forensics/funding secured/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: stdin
+Start: Sat Dec 16 16:03:55 2023
+Length: Unknown
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Interrupt received at Sat Dec 16 16:03:58 2023
