@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Jul  4 01:15:10 2023
+Invocation: foremost updog 
+Output directory: /workspaces/ctf-problems/waniCTF2023/forensics/whats-happening/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: updog
+Start: Tue Jul  4 01:15:10 2023
+Length: 374 KB (382976 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000132.png 	       6 KB 	      67584 	  (200 x 200)
+Finish: Tue Jul  4 01:15:10 2023
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Tue Jul  4 01:15:11 2023

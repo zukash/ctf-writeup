@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Dec  9 16:36:56 2023
+Invocation: foremost look-inside 
+Output directory: /workspaces/ctf-problems/pingCTF_2023/misc/inside-bear/look-inside/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: look-inside
+Start: Sat Dec  9 16:36:56 2023
+Length: 1 MB (1311310 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000031.zip 	       1 MB 	      15968 	 
+Finish: Sat Dec  9 16:36:56 2023
+
+1 FILES EXTRACTED
+	
+zip:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Dec  9 16:36:57 2023

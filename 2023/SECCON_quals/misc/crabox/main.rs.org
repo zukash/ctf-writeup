@@ -1,0 +1,6 @@
+fn main() {
+    const f: &[u8; 235] = include_bytes!(file!());
+    const b: bool = f[000] >= 000;
+    const r: u8 = 1 / (b as u8);
+    /* Steal me: SECCON{AAAAAAAAAAAAAAAAAAA} */
+}

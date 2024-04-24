@@ -1,0 +1,33 @@
+# WaniCTF
+
+category | problem | writeup
+--- | --- | ---
+crypto | [EZDORSA-Lv1](crypto/EZDORSA-Lv1) | [writeup](crypto/EZDORSA-Lv1/writeup.md)
+crypto | [EZDORSA-Lv2](crypto/EZDORSA-Lv2) | [writeup](crypto/EZDORSA-Lv2/writeup.md)
+crypto | [EZDORSA-Lv3](crypto/EZDORSA-Lv3) | [writeup](crypto/EZDORSA-Lv3/writeup.md)
+crypto | [fusion](crypto/fusion) | [writeup](crypto/fusion/writeup.md)
+crypto | [pqqp](crypto/pqqp) | [writeup](crypto/pqqp/writeup.md)
+forensics | [Just-mp4](forensics/Just-mp4) | -
+forensics | [beg-for-a-peg](forensics/beg-for-a-peg) | -
+forensics | [lowkey-messedup](forensics/lowkey-messedup) | -
+forensics | [whats-happening](forensics/whats-happening) | [writeup](forensics/whats-happening/writeup.md)
+misc | [guess](misc/guess) | -
+misc | [int-generator](misc/int-generator) | -
+misc | [prompt](misc/prompt) | -
+misc | [range-xor](misc/range-xor) | -
+misc | [shuffle-base64](misc/shuffle-base64) | -
+pwnable | [Canaleak](pwnable/Canaleak) | -
+pwnable | [beginners-rop](pwnable/beginners-rop) | -
+pwnable | [netcat](pwnable/netcat) | -
+pwnable | [only-once](pwnable/only-once) | -
+pwnable | [ret2libc](pwnable/ret2libc) | -
+pwnable | [ret2win](pwnable/ret2win) | -
+pwnable | [shell-basic](pwnable/shell-basic) | -
+reversing | [Just_Passw0rd](reversing/Just_Passw0rd) | -
+reversing | [fermat](reversing/fermat) | -
+reversing | [javersing](reversing/javersing) | -
+reversing | [theseus](reversing/theseus) | -
+web | [64bps](web/64bps) | -
+web | [extract1](web/extract1) | -
+web | [extract2](web/extract2) | -
+web | [screenshot](web/screenshot) | -
