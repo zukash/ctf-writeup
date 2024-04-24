@@ -1,0 +1,9 @@
+text = """
+Efe kqkbkx czwkf akfs kdkf qzfskf wzdcjtfk
+Ieqku kqk akfs ikxj kck akfs wkak ukikukf :Q
+Lzfqztk ukdj kqk qe wefe: bkvim{wzbkdki_ckse_kckukx_ukdj_wjuk_kfkbewew_mtzujzfwe}
+"""
+
+text = text[::-1]
+
+print(text)

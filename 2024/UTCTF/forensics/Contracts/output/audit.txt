@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Mar 30 22:59:47 2024
+Invocation: foremost document.pdf 
+Output directory: /workspaces/ctf-problems/2024/UTCTF/forensics/Contracts/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: document.pdf
+Start: Sat Mar 30 22:59:47 2024
+Length: 373 KB (382824 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000006.jpg 	     236 KB 	       3251 	 
+1:	00000000.pdf 	     278 KB 	          0 	 
+Finish: Sat Mar 30 22:59:48 2024
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+pdf:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Mar 30 22:59:48 2024

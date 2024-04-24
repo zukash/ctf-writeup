@@ -1,0 +1,40 @@
+from base64 import b64decode
+from Crypto.PublicKey import RSA
+from Crypto.Util.number import *
+
+with open("private.pem", "r") as f:
+    private_key = f.read()
+with open("public.pem", "r") as f:
+    public_key = f.read()
+with open("flag.txt.enc", "rb") as f:
+    flag_enc = f.read()
+
+# private_key = RSA.import_key(private_key)
+public_key = RSA.import_key(public_key)
+
+# print(private_key)
+print(public_key)
+print(public_key.e)
+print(public_key.n)
+n, e = public_key.n, public_key.e
+
+# flag = pow(bytes_to_long(flag_enc), private_key.d, public_key.n)
+# prsint(long_to_bytes(flag))
+
+
+# https://gchq.github.io/CyberChef/#recipe=Parse_ASN.1_hex_string(0,32)&input=MDI4MTgxMDBmNDVhYjYxYmM2MTA2Zjc5MjQ1OGJlNDM5NWQzZWEyNjdlZWI3MDRiYWMwOGEwMjk5ZTA5ODBhYWU0YzZlODFkZDY2N2YwZDBjMjFmMmY5OGViYTZmZTFiZjE4YzY0OTdiMGE4NDI5MDQ4YmMwNzcwMDhjYTFmMWEyZTlkZTE1N2E3YTAzMTU3NGFlNDA1NmI0ZTQ0ZDllMzVkZmI2MWIxNjVlZjNhMDA0OWNjNjliYzA4OTQxMmZiMTU2ZDUyOTYxY2UyNWQ1MDlkODY5MGE1Y2QzZjQ4Mjk1MjRjZjFiYmVmOTFmOTBlNzI3Y2I3OGFjYWEwZDQyZWFmZWZlOTczMDI4MTgwM2Q0MTUzNDAyMzViYWM3ZTE5ODNkNzUzMzAzNGZlZDVkMGE2ZWU1NzY4MDMzMTkyMjllMThhMjM4OTU5M2ZjMDEzMWNjOTUzYzI2ZDc5MDUwYjI3NzEwMzEwZDFiYTY5YzRhZWMwYzg2NmQxNjMwYjg1MGQwOTFiYTgwODdhMzQ3MjM4MTY1MjIyYThjNDQ5NjE4NzNlNjkxNGQ1NzZkNDBmM2QyMjJkYmQ2MTFkM2E4OTMwMDU5ODI5NjI2Y2UxMTljOTZmMWU4ZDE4OTAyMTc3NjM2MmUwMmM4ZTFhNmJhMzYyOWE4ZDllOWQ2YTdkOTM2MTk5YzhmZjU0ZTc4MTAyODE4MTAwOTgwM2IyZDUzNjczZDUxNTk1MzIwYzMzYjk4YjFiNTkxNThlNWNjZjA2ZDg1YWUzNjkyOGRhM2RmNjkzNzNhNWQ0NTNkNzcxZDdjMjU0ZjcxYTZiNGExYzkyMzlkN2ZlYjI2ZDBhZjNmZGZiZDNkOGIzZWYyMjQ4NDQ4NWZkYzE2ZDRiZjA0NjMxMTYwN2Y1MDhiZDM2OWMwNzQ0YjMzMzBjOGEzNjE4MjVkMTIwNWE1NTJmZTE1YjA4YWE3OTNkNWZmY2M3MzZiNmI5MTc1NWJlODk0NmQ4NDYxNjBlMzBlZmNhNmQxOWJhYzliMWQ5OGI1MzYwOGQyNmYwZTZkNzAyODE4MDY3YTRmYzY4NWU4NjAxOWQyY2YzNWUxOTdjNDczMmNkOTFhYjY1OTQzZjMwOWVkNmYxOTE5ZDUzNWZmMmZiNmQzODJmMzdjNmIxNmY5ZGZhYzRjZjdkMDNkODg2N2QzN2ZlYTUzNzQ4NTg0ZmQzZGU2YzYzMzEwYjc4ZTM5OWRmMjIxMzM5ZmI0NzExZDMwZmRkNzdkZjljMGI5ZDgyN2RlZDA0N2FlZGJiNDEyYzU0NTJmOGUwN2VjMjU5ZWUyMWM3NzMzOGY0Y2QyNTdjNDQ0M2ViNDk0ZmMxNDFiNWYyMTYzOWE5Y2I2MTRhNGEzNTdmNTVhNDRlMDM3YjQ2YmI
+
+q = 0x00F45AB61BC6106F792458BE4395D3EA267EEB704BAC08A0299E0980AAE4C6E81DD667F0D0C21F2F98EBA6FE1BF18C6497B0A8429048BC077008CA1F1A2E9DE157A7A031574AE4056B4E44D9E35DFB61B165EF3A0049CC69BC089412FB156D52961CE25D509D8690A5CD3F4829524CF1BBEF91F90E727CB78ACAA0D42EAFEFE973
+
+print(q.bit_length())
+
+p = n // q
+assert p * q == n
+
+phi = (p - 1) * (q - 1)
+d = inverse(e, phi)
+print(flag_enc)
+flag = pow(bytes_to_long(flag_enc), d, n)
+print(long_to_bytes(flag))
+
+# gigem{Q_Fr0M_Pr1V473_K3Y_89JD54}
