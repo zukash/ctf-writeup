@@ -1,4 +1,5 @@
 # LACTF
+
 category | problem | writeup
 --- | --- | ---
 crypto | [budget-bag](crypto/budget-bag) | -
