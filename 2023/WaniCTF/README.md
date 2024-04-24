@@ -1,15 +1,16 @@
 # WaniCTF
+
 category | problem | writeup
 --- | --- | ---
-crypto | [EZDORSA-Lv1](crypto/EZDORSA-Lv1) | -
-crypto | [EZDORSA-Lv2](crypto/EZDORSA-Lv2) | -
-crypto | [EZDORSA-Lv3](crypto/EZDORSA-Lv3) | -
-crypto | [fusion](crypto/fusion) | -
-crypto | [pqqp](crypto/pqqp) | -
+crypto | [EZDORSA-Lv1](crypto/EZDORSA-Lv1) | [writeup](crypto/EZDORSA-Lv1/writeup.md)
+crypto | [EZDORSA-Lv2](crypto/EZDORSA-Lv2) | [writeup](crypto/EZDORSA-Lv2/writeup.md)
+crypto | [EZDORSA-Lv3](crypto/EZDORSA-Lv3) | [writeup](crypto/EZDORSA-Lv3/writeup.md)
+crypto | [fusion](crypto/fusion) | [writeup](crypto/fusion/writeup.md)
+crypto | [pqqp](crypto/pqqp) | [writeup](crypto/pqqp/writeup.md)
 forensics | [Just-mp4](forensics/Just-mp4) | -
 forensics | [beg-for-a-peg](forensics/beg-for-a-peg) | -
 forensics | [lowkey-messedup](forensics/lowkey-messedup) | -
-forensics | [whats-happening](forensics/whats-happening) | -
+forensics | [whats-happening](forensics/whats-happening) | [writeup](forensics/whats-happening/writeup.md)
 misc | [guess](misc/guess) | -
 misc | [int-generator](misc/int-generator) | -
 misc | [prompt](misc/prompt) | -

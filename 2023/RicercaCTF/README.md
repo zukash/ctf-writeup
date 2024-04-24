@@ -1,10 +1,11 @@
 # RicercaCTF
+
 category | problem | writeup
 --- | --- | ---
 crypto | [RevolvingLetters](crypto/RevolvingLetters) | -
 crypto | [rotated-secret-analysis](crypto/rotated-secret-analysis) | -
 crypto | [rsalcg](crypto/rsalcg) | -
-forensics | [My_name_is_Power!](forensics/My_name_is_Power%21) | -
+forensics | [My_name_is_Power!](forensics/My_name_is_Power%21) | [writeup](forensics/My_name_is_Power%21/writeup.md)
 misc | [gatekeeper](misc/gatekeeper) | -
 pwnable | [BOFSec](pwnable/BOFSec) | -
 pwnable | [NEMU](pwnable/NEMU) | -

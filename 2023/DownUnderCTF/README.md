@@ -1,4 +1,5 @@
 # DownUnderCTF
+
 category | problem | writeup
 --- | --- | ---
 crypto | [apbq-rsa-i](crypto/apbq-rsa-i) | -
@@ -11,10 +12,10 @@ crypto | [randomly-chosen](crypto/randomly-chosen) | -
 misc | [MyFirstCProgram!](misc/MyFirstCProgram%21) | -
 misc | [SimpleFTPServer](misc/SimpleFTPServer) | -
 misc | [babyruby](misc/babyruby) | -
-misc | [impossible](misc/impossible) | -
+misc | [impossible](misc/impossible) | [writeup](misc/impossible/writeup.md)
 pwnable | [confusing](pwnable/confusing) | -
 pwnable | [downunderflow](pwnable/downunderflow) | -
-pwnable | [onebyte](pwnable/onebyte) | -
+pwnable | [onebyte](pwnable/onebyte) | [writeup](pwnable/onebyte/writeup.md)
 pwnable | [safe-calculator](pwnable/safe-calculator) | -
 pwnable | [the_great_escape](pwnable/the_great_escape) | -
 reversing | [pyny](reversing/pyny) | -

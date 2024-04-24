@@ -1,4 +1,5 @@
 # TheCyberCooperativeCTF
+
 category | problem | writeup
 --- | --- | ---
 crypto | [Emperor's New Crypto](crypto/Emperor%27s%20New%20Crypto) | -
@@ -16,5 +17,5 @@ reversing | [GameCode](reversing/GameCode) | -
 reversing | [Magic Number](reversing/Magic%20Number) | -
 reversing | [dis](reversing/dis) | -
 reversing | [easycrack](reversing/easycrack) | -
-web | [facegram](web/facegram) | -
+web | [facegram](web/facegram) | [writeup](web/facegram/writeup.md)
 web | [valid yaml](web/valid%20yaml) | -

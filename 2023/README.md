@@ -1,5 +1,7 @@
 # 2023
+
 ## crypto
+
 contest | problem | writeup
 --- | --- | ---
 BalsnCTF | [Many-Time-QKD](BalsnCTF/crypto/Many-Time-QKD) | -
@@ -113,7 +115,9 @@ pingCTF | [shrek](pingCTF/crypto/shrek) | -
 zer0ptsCTF | [SquareRNG](zer0ptsCTF/crypto/SquareRNG) | -
 zer0ptsCTF | [easy_factoring](zer0ptsCTF/crypto/easy_factoring) | [writeup](zer0ptsCTF/crypto/easy_factoring/writeup.md)
 zer0ptsCTF | [elliptic_ring_rsa](zer0ptsCTF/crypto/elliptic_ring_rsa) | -
+
 ## forensics
+
 contest | problem | writeup
 --- | --- | ---
 CrewCTF | [Attaaaaack1](CrewCTF/forensics/Attaaaaack1) | [writeup](CrewCTF/forensics/Attaaaaack1/writeup.md)
@@ -131,7 +135,9 @@ WaniCTF | [Just-mp4](WaniCTF/forensics/Just-mp4) | -
 WaniCTF | [beg-for-a-peg](WaniCTF/forensics/beg-for-a-peg) | -
 WaniCTF | [lowkey-messedup](WaniCTF/forensics/lowkey-messedup) | -
 WaniCTF | [whats-happening](WaniCTF/forensics/whats-happening) | [writeup](WaniCTF/forensics/whats-happening/writeup.md)
+
 ## misc
+
 contest | problem | writeup
 --- | --- | ---
 BalsnCTF | [kShell](BalsnCTF/misc/kShell) | -
@@ -172,7 +178,9 @@ pingCTF | [wow](pingCTF/misc/wow) | -
 pingCTF | [you-spin-me-round](pingCTF/misc/you-spin-me-round) | -
 zer0ptsCTF | [netfs1](zer0ptsCTF/misc/netfs1) | -
 zer0ptsCTF | [netfs2](zer0ptsCTF/misc/netfs2) | -
+
 ## pwnable
+
 contest | problem | writeup
 --- | --- | ---
 BalsnCTF | [babypwn](BalsnCTF/pwnable/babypwn) | -
@@ -235,7 +243,9 @@ pingCTF | [dangle-me](pingCTF/pwnable/dangle-me) | -
 pingCTF | [without-love-it-cannot-be-seen](pingCTF/pwnable/without-love-it-cannot-be-seen) | -
 zer0ptsCTF | [aush](zer0ptsCTF/pwnable/aush) | -
 zer0ptsCTF | [qjail](zer0ptsCTF/pwnable/qjail) | -
+
 ## reversing
+
 contest | problem | writeup
 --- | --- | ---
 DownUnderCTF | [pyny](DownUnderCTF/reversing/pyny) | -
@@ -257,7 +267,9 @@ WaniCTF | [fermat](WaniCTF/reversing/fermat) | -
 WaniCTF | [javersing](WaniCTF/reversing/javersing) | -
 WaniCTF | [theseus](WaniCTF/reversing/theseus) | -
 cakectf | [imgchk](cakectf/reversing/imgchk) | -
+
 ## web
+
 contest | problem | writeup
 --- | --- | ---
 BuckeyeCTF | [OhioInstruments84](BuckeyeCTF/web/OhioInstruments84) | -
@@ -283,7 +295,6 @@ SECCON_final | [babywaf](SECCON_final/web/babywaf) | -
 SECCON_quals | [Bad-JWT](SECCON_quals/web/Bad-JWT) | -
 SECCON_quals | [SimpleCalc](SECCON_quals/web/SimpleCalc) | -
 SEKAICTF | [ScannerService](SEKAICTF/web/ScannerService) | -
-SamsungCTF | [SQLi102](SamsungCTF/web/SQLi102) | -
 SamsungCTF | [SQLi103](SamsungCTF/web/SQLi103) | -
 SamsungCTF | [XSS101](SamsungCTF/web/XSS101) | [writeup](SamsungCTF/web/XSS101/writeup.md)
 TheCyberCooperativeCTF | [facegram](TheCyberCooperativeCTF/web/facegram) | [writeup](TheCyberCooperativeCTF/web/facegram/writeup.md)
