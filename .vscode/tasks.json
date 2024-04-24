@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Execute Sage",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-c", "cd ${fileDirname} && sage ${file} && rm ${file}.py"],
+      "group": "build"
+    },
+    {
+      "label": "Execute Python",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-c", "cd ${fileDirname} && python ${file}"],
+      "group": "build"
+    },
+    {
+      "label": "Generate Template",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/generate_template.py"],
+      "group": "build"
+    }
+  ]
+}

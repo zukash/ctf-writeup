@@ -1,0 +1,22 @@
+{
+  "writeup_template": {
+    "scope": "markdown",
+    "prefix": "writeup",
+    "body": [
+      "---",
+      "tags:",
+      "createdAt: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
+      "---",
+      "",
+      "# ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}",
+      "",
+      "## 概要",
+      "",
+      "## 観察",
+      "",
+      "## 解法",
+      ""
+    ],
+    "description": "writeup"
+  }
+}
