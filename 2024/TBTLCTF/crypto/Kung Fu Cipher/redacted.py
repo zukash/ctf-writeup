@@ -1,0 +1,1 @@
+FLAG = b"TBTL{1_Kn0W_H0w_2_Br34k_7h3_KUn6_F00_C1ph3R}"
