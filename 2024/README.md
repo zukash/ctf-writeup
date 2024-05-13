@@ -42,6 +42,12 @@ TAMUctf | [Truncated1](TAMUctf/crypto/Truncated1) | -
 TAMUctf | [Truncated2](TAMUctf/crypto/Truncated2) | -
 TAMUctf | [emoji-group](TAMUctf/crypto/emoji-group) | -
 TAMUctf | [jumbled](TAMUctf/crypto/jumbled) | -
+TBTLCTF | [Cursed Decryption](TBTLCTF/crypto/Cursed%20Decryption) | -
+TBTLCTF | [Fence Building](TBTLCTF/crypto/Fence%20Building) | [writeup](TBTLCTF/crypto/Fence%20Building/writeup.md)
+TBTLCTF | [Kung Fu Cipher](TBTLCTF/crypto/Kung%20Fu%20Cipher) | [writeup](TBTLCTF/crypto/Kung%20Fu%20Cipher/writeup.md)
+TBTLCTF | [School Essay](TBTLCTF/crypto/School%20Essay) | [writeup](TBTLCTF/crypto/School%20Essay/writeup.md)
+TBTLCTF | [University Paper](TBTLCTF/crypto/University%20Paper) | [writeup](TBTLCTF/crypto/University%20Paper/writeup.md)
+TBTLCTF | [Wikipedia Signatures](TBTLCTF/crypto/Wikipedia%20Signatures) | [writeup](TBTLCTF/crypto/Wikipedia%20Signatures/writeup.md)
 TetCTF | [flip](TetCTF/crypto/flip) | -
 TetCTF | [flip_v2](TetCTF/crypto/flip_v2) | -
 UMassCTF | [Brutal Mogging](UMassCTF/crypto/Brutal%20Mogging) | -
@@ -128,6 +134,9 @@ TAMUctf | [index](TAMUctf/pwnable/index) | -
 TAMUctf | [rift](TAMUctf/pwnable/rift) | -
 TAMUctf | [shrink](TAMUctf/pwnable/shrink) | -
 TAMUctf | [super-lucky](TAMUctf/pwnable/super-lucky) | -
+TBTLCTF | [A Day at the Races](TBTLCTF/pwnable/A%20Day%20at%20the%20Races) | [writeup](TBTLCTF/pwnable/A%20Day%20at%20the%20Races/writeup.md)
+TBTLCTF | [Enough with the averages](TBTLCTF/pwnable/Enough%20with%20the%20averages) | [writeup](TBTLCTF/pwnable/Enough%20with%20the%20averages/writeup.md)
+TBTLCTF | [Squeezing Tightly On Arm](TBTLCTF/pwnable/Squeezing%20Tightly%20On%20Arm) | [writeup](TBTLCTF/pwnable/Squeezing%20Tightly%20On%20Arm/writeup.md)
 UMassCTF | [Mitigations are Awesome](UMassCTF/pwnable/Mitigations%20are%20Awesome) | -
 UMassCTF | [bench-255](UMassCTF/pwnable/bench-255) | -
 VolgaCTF | [warm_of_pon](VolgaCTF/pwnable/warm_of_pon) | -
@@ -149,6 +158,7 @@ contest | problem | writeup
 BraekerCTF | [Embryobot](BraekerCTF/reversing/Embryobot) | -
 BraekerCTF | [binary_shrink](BraekerCTF/reversing/binary_shrink) | -
 BraekerCTF | [fetusbot](BraekerCTF/reversing/fetusbot) | -
+TBTLCTF | [Floo Powder](TBTLCTF/reversing/Floo%20Powder) | [writeup](TBTLCTF/reversing/Floo%20Powder/writeup.md)
 TetCTF | [warmup](TetCTF/reversing/warmup) | -
 
 ## web
