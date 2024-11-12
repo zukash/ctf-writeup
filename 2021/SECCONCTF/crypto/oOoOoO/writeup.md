@@ -14,8 +14,8 @@ createdAt: 2024/11/12
 
 ## 観察
 
-* `bytes_to_long(m) % M` が与えられる
-  * $\mathrm{bytes\_to\_long}(m) = \sum m_i 256^i$
+* `bytes_to_long(c) % m` が与えられる
+  * $\sum c_i 256^{i} \equiv s \pmod m$
   * 巨大な数同士を小さな係数で結びつける式 → LLL
 * $\sum c_iA_i \equiv t \pmod m$ を満たす $c_i \in \{\alpha, \beta\}$ を見つける問題に帰着
 * $\sum c_i'A_i \equiv t - \sum \alpha A_i \pmod m$ を満たす $c_i' \in \{0, \beta - \alpha\}$ を見つける問題に帰着
