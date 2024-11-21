@@ -106,7 +106,7 @@ cakectf | [ding-dong-ting-ping](cakectf/crypto/ding-dong-ting-ping) | -
 cakectf | [janken_vs_yoshiking_2](cakectf/crypto/janken_vs_yoshiking_2) | -
 cakectf | [simple_signature](cakectf/crypto/simple_signature) | -
 pingCTF | [ancient-genius](pingCTF/crypto/ancient-genius) | -
-pingCTF | [easy-rsa](pingCTF/crypto/easy-rsa) | -
+pingCTF | [easy-rsa](pingCTF/crypto/easy-rsa) | [writeup](pingCTF/crypto/easy-rsa/writeup.md)
 pingCTF | [hard-work](pingCTF/crypto/hard-work) | -
 pingCTF | [lame-lame-loser](pingCTF/crypto/lame-lame-loser) | -
 pingCTF | [old-friend-from-the-past](pingCTF/crypto/old-friend-from-the-past) | -

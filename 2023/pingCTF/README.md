@@ -3,7 +3,7 @@
 category | problem | writeup
 --- | --- | ---
 crypto | [ancient-genius](crypto/ancient-genius) | -
-crypto | [easy-rsa](crypto/easy-rsa) | -
+crypto | [easy-rsa](crypto/easy-rsa) | [writeup](crypto/easy-rsa/writeup.md)
 crypto | [hard-work](crypto/hard-work) | -
 crypto | [lame-lame-loser](crypto/lame-lame-loser) | -
 crypto | [old-friend-from-the-past](crypto/old-friend-from-the-past) | -
