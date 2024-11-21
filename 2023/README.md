@@ -49,7 +49,7 @@ GoogleCTF | [cursved](GoogleCTF/crypto/cursved) | -
 GoogleCTF | [least_common_genominator](GoogleCTF/crypto/least_common_genominator) | -
 GoogleCTF | [primes](GoogleCTF/crypto/primes) | -
 HITCONCTF | [CarelessPadding](HITCONCTF/crypto/CarelessPadding) | -
-HITCONCTF | [Share](HITCONCTF/crypto/Share) | -
+HITCONCTF | [Share](HITCONCTF/crypto/Share) | [writeup](HITCONCTF/crypto/Share/writeup.md)
 HITCONCTF | [echo](HITCONCTF/crypto/echo) | -
 HeroCTF | [Futile](HeroCTF/crypto/Futile) | -
 HeroCTF | [HyperLoop](HeroCTF/crypto/HyperLoop) | -
@@ -106,7 +106,7 @@ cakectf | [ding-dong-ting-ping](cakectf/crypto/ding-dong-ting-ping) | -
 cakectf | [janken_vs_yoshiking_2](cakectf/crypto/janken_vs_yoshiking_2) | -
 cakectf | [simple_signature](cakectf/crypto/simple_signature) | -
 pingCTF | [ancient-genius](pingCTF/crypto/ancient-genius) | -
-pingCTF | [easy-rsa](pingCTF/crypto/easy-rsa) | -
+pingCTF | [easy-rsa](pingCTF/crypto/easy-rsa) | [writeup](pingCTF/crypto/easy-rsa/writeup.md)
 pingCTF | [hard-work](pingCTF/crypto/hard-work) | -
 pingCTF | [lame-lame-loser](pingCTF/crypto/lame-lame-loser) | -
 pingCTF | [old-friend-from-the-past](pingCTF/crypto/old-friend-from-the-past) | -
