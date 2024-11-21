@@ -49,7 +49,7 @@ GoogleCTF | [cursved](GoogleCTF/crypto/cursved) | -
 GoogleCTF | [least_common_genominator](GoogleCTF/crypto/least_common_genominator) | -
 GoogleCTF | [primes](GoogleCTF/crypto/primes) | -
 HITCONCTF | [CarelessPadding](HITCONCTF/crypto/CarelessPadding) | -
-HITCONCTF | [Share](HITCONCTF/crypto/Share) | -
+HITCONCTF | [Share](HITCONCTF/crypto/Share) | [writeup](HITCONCTF/crypto/Share/writeup.md)
 HITCONCTF | [echo](HITCONCTF/crypto/echo) | -
 HeroCTF | [Futile](HeroCTF/crypto/Futile) | -
 HeroCTF | [HyperLoop](HeroCTF/crypto/HyperLoop) | -
