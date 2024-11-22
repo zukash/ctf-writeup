@@ -1,9 +1,9 @@
 ---
 tags:
-- crypto/rsa
-- crypto/bit_extension_search
-- crypto/copper_smith_attack
-- todo
+  - crypto/rsa/copper_smith_attack
+  - crypto/polynomial/small_roots
+  - crypto/equation/bit_extension_search
+  - todo
 createdAt: 2024/11/15
 ---
 
@@ -12,8 +12,6 @@ createdAt: 2024/11/15
 * ref. <https://furutsuki.hatenablog.com/entry/2022/06/05/152549>
 * ref. <https://qiita.com/ushigai_sub/items/1182d7f49e7ff92646e7#hard-omni-rsa--240points--14solves->
 * ref. <https://zenn.dev/hk_ilohas/articles/ctf4b2022-crypto#omni-rsa-%5Bhard%5D>
-
-TODO: copper_smith_attack のパラメータ調整
 
 ## 概要
 
@@ -91,3 +89,12 @@ for i in range(471):
 下位 bit から拡張して枝刈りする手法は何度か出題されているので、多変数に拡張してライブラリ化した。
 
 <https://github.com/zukash/ctftools/blob/main/ctftools/crypto/equation.py>
+
+## 追記
+
+[writer 解法](https://qiita.com/ushigai_sub/items/1182d7f49e7ff92646e7#hard-omni-rsa--240points--14solves-) を参考に CopperSmith's Attack で解く方法も試した。
+（solve_with_copper_smith_attack.py 参照）
+
+また、small_roots_mod_p をライブラリ化した。
+
+<https://github.com/zukash/ctftools/blob/main/ctftools/crypto/rsa.py>
