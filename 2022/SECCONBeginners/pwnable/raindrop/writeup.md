@@ -26,7 +26,7 @@ payload = flat(bytes(0x18), rop.chain())
 
 がうまく動作しなかった。
 
-以下のエラーが出ていたし、16 bytes alignment の問題。
+以下のエラーが出ていたし、[16 bytes alignment の問題](https://sok1.hatenablog.com/entry/2022/01/17/050710)。
 
 ```plaintext
 ► 0x736db9f07973 <do_system+115>    movaps xmmword ptr [rsp], xmm1                   <[0x7ffca3852948] not aligned to 16 bytes>
