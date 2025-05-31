@@ -10,6 +10,7 @@ contest | problem | writeup
 BraekerCTF | [block_construction](BraekerCTF/crypto/block_construction) | [writeup](BraekerCTF/crypto/block_construction/writeup.md)
 BraekerCTF | [messengesus2](BraekerCTF/crypto/messengesus2) | -
 BraekerCTF | [messengesus](BraekerCTF/crypto/messengesus) | [writeup](BraekerCTF/crypto/messengesus/writeup.md)
+CrewCTF | [4ES](CrewCTF/crypto/4ES) | [writeup](CrewCTF/crypto/4ES/writeup.md)
 GCCCTF | [Elliptic](GCCCTF/crypto/Elliptic) | [writeup](GCCCTF/crypto/Elliptic/writeup.md)
 GCCCTF | [GCCNews](GCCCTF/crypto/GCCNews) | -
 GCCCTF | [SuperAES](GCCCTF/crypto/SuperAES) | [writeup](GCCCTF/crypto/SuperAES/writeup.md)
