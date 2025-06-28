@@ -1,0 +1,680 @@
+   0:   43                      rex.XB
+   0:   47                      rex.RXB
+   0:   49                      rex.WB
+   0:   4f                      rex.WRXB
+   0:   53                      push   rbx
+   0:   59                      pop    rcx
+   0:   65                      gs
+   0:   67                      addr32
+   0:   6d                      ins    DWORD PTR es:[rdi], dx
+   0:   95                      xchg   ebp, eax
+   0:   97                      xchg   edi, eax
+   0:   9d                      popf
+   0:   a7                      cmps   DWORD PTR ds:[rsi], DWORD PTR es:[rdi]
+   0:   ad                      lods   eax, DWORD PTR ds:[rsi]
+   0:   ef                      out    dx, eax
+   0:   f1                      int1
+   0:   fb                      sti
+---
+   0:   02 02                   add    al, BYTE PTR [rdx]
+   0:   02 03                   add    al, BYTE PTR [rbx]
+   0:   02 07                   add    al, BYTE PTR [rdi]
+   0:   02 0b                   add    cl, BYTE PTR [rbx]
+   0:   02 11                   add    dl, BYTE PTR [rcx]
+   0:   02 13                   add    dl, BYTE PTR [rbx]
+   0:   02 17                   add    dl, BYTE PTR [rdi]
+   0:   02 1f                   add    bl, BYTE PTR [rdi]
+   0:   02 29                   add    ch, BYTE PTR [rcx]
+   0:   02 2b                   add    ch, BYTE PTR [rbx]
+   0:   02 2f                   add    ch, BYTE PTR [rdi]
+   0:   02 3b                   add    bh, BYTE PTR [rbx]
+   0:   02 c1                   add    al, cl
+   0:   02 c5                   add    al, ch
+   0:   02 c7                   add    al, bh
+   0:   02 d3                   add    dl, bl
+   0:   02 df                   add    bl, bh
+   0:   02 e3                   add    ah, bl
+   0:   02 e5                   add    ah, ch
+   0:   02 e9                   add    ch, cl
+   0:   02 ef                   add    ch, bh
+   0:   02 f1                   add    dh, cl
+   0:   02 fb                   add    bh, bl
+   0:   03 02                   add    eax, DWORD PTR [rdx]
+   0:   03 03                   add    eax, DWORD PTR [rbx]
+   0:   03 07                   add    eax, DWORD PTR [rdi]
+   0:   03 0b                   add    ecx, DWORD PTR [rbx]
+   0:   03 11                   add    edx, DWORD PTR [rcx]
+   0:   03 13                   add    edx, DWORD PTR [rbx]
+   0:   03 17                   add    edx, DWORD PTR [rdi]
+   0:   03 1f                   add    ebx, DWORD PTR [rdi]
+   0:   03 29                   add    ebp, DWORD PTR [rcx]
+   0:   03 2b                   add    ebp, DWORD PTR [rbx]
+   0:   03 2f                   add    ebp, DWORD PTR [rdi]
+   0:   03 3b                   add    edi, DWORD PTR [rbx]
+   0:   03 c1                   add    eax, ecx
+   0:   03 c5                   add    eax, ebp
+   0:   03 c7                   add    eax, edi
+   0:   03 d3                   add    edx, ebx
+   0:   03 df                   add    ebx, edi
+   0:   03 e3                   add    esp, ebx
+   0:   03 e5                   add    esp, ebp
+   0:   03 e9                   add    ebp, ecx
+   0:   03 ef                   add    ebp, edi
+   0:   03 f1                   add    esi, ecx
+   0:   03 fb                   add    edi, ebx
+   0:   0b 02                   or     eax, DWORD PTR [rdx]
+   0:   0b 03                   or     eax, DWORD PTR [rbx]
+   0:   0b 07                   or     eax, DWORD PTR [rdi]
+   0:   0b 0b                   or     ecx, DWORD PTR [rbx]
+   0:   0b 11                   or     edx, DWORD PTR [rcx]
+   0:   0b 13                   or     edx, DWORD PTR [rbx]
+   0:   0b 17                   or     edx, DWORD PTR [rdi]
+   0:   0b 1f                   or     ebx, DWORD PTR [rdi]
+   0:   0b 29                   or     ebp, DWORD PTR [rcx]
+   0:   0b 2b                   or     ebp, DWORD PTR [rbx]
+   0:   0b 2f                   or     ebp, DWORD PTR [rdi]
+   0:   0b 3b                   or     edi, DWORD PTR [rbx]
+   0:   0b c1                   or     eax, ecx
+   0:   0b c5                   or     eax, ebp
+   0:   0b c7                   or     eax, edi
+   0:   0b d3                   or     edx, ebx
+   0:   0b df                   or     ebx, edi
+   0:   0b e3                   or     esp, ebx
+   0:   0b e5                   or     esp, ebp
+   0:   0b e9                   or     ebp, ecx
+   0:   0b ef                   or     ebp, edi
+   0:   0b f1                   or     esi, ecx
+   0:   0b fb                   or     edi, ebx
+   0:   11 02                   adc    DWORD PTR [rdx], eax
+   0:   11 03                   adc    DWORD PTR [rbx], eax
+   0:   11 07                   adc    DWORD PTR [rdi], eax
+   0:   11 0b                   adc    DWORD PTR [rbx], ecx
+   0:   11 11                   adc    DWORD PTR [rcx], edx
+   0:   11 13                   adc    DWORD PTR [rbx], edx
+   0:   11 17                   adc    DWORD PTR [rdi], edx
+   0:   11 1f                   adc    DWORD PTR [rdi], ebx
+   0:   11 29                   adc    DWORD PTR [rcx], ebp
+   0:   11 2b                   adc    DWORD PTR [rbx], ebp
+   0:   11 2f                   adc    DWORD PTR [rdi], ebp
+   0:   11 3b                   adc    DWORD PTR [rbx], edi
+   0:   11 c1                   adc    ecx, eax
+   0:   11 c5                   adc    ebp, eax
+   0:   11 c7                   adc    edi, eax
+   0:   11 d3                   adc    ebx, edx
+   0:   11 df                   adc    edi, ebx
+   0:   11 e3                   adc    ebx, esp
+   0:   11 e5                   adc    ebp, esp
+   0:   11 e9                   adc    ecx, ebp
+   0:   11 ef                   adc    edi, ebp
+   0:   11 f1                   adc    ecx, esi
+   0:   11 fb                   adc    ebx, edi
+   0:   13 02                   adc    eax, DWORD PTR [rdx]
+   0:   13 03                   adc    eax, DWORD PTR [rbx]
+   0:   13 07                   adc    eax, DWORD PTR [rdi]
+   0:   13 0b                   adc    ecx, DWORD PTR [rbx]
+   0:   13 11                   adc    edx, DWORD PTR [rcx]
+   0:   13 13                   adc    edx, DWORD PTR [rbx]
+   0:   13 17                   adc    edx, DWORD PTR [rdi]
+   0:   13 1f                   adc    ebx, DWORD PTR [rdi]
+   0:   13 29                   adc    ebp, DWORD PTR [rcx]
+   0:   13 2b                   adc    ebp, DWORD PTR [rbx]
+   0:   13 2f                   adc    ebp, DWORD PTR [rdi]
+   0:   13 3b                   adc    edi, DWORD PTR [rbx]
+   0:   13 c1                   adc    eax, ecx
+   0:   13 c5                   adc    eax, ebp
+   0:   13 c7                   adc    eax, edi
+   0:   13 d3                   adc    edx, ebx
+   0:   13 df                   adc    ebx, edi
+   0:   13 e3                   adc    esp, ebx
+   0:   13 e5                   adc    esp, ebp
+   0:   13 e9                   adc    ebp, ecx
+   0:   13 ef                   adc    ebp, edi
+   0:   13 f1                   adc    esi, ecx
+   0:   13 fb                   adc    edi, ebx
+   0:   29 02                   sub    DWORD PTR [rdx], eax
+   0:   29 03                   sub    DWORD PTR [rbx], eax
+   0:   29 07                   sub    DWORD PTR [rdi], eax
+   0:   29 0b                   sub    DWORD PTR [rbx], ecx
+   0:   29 11                   sub    DWORD PTR [rcx], edx
+   0:   29 13                   sub    DWORD PTR [rbx], edx
+   0:   29 17                   sub    DWORD PTR [rdi], edx
+   0:   29 1f                   sub    DWORD PTR [rdi], ebx
+   0:   29 29                   sub    DWORD PTR [rcx], ebp
+   0:   29 2b                   sub    DWORD PTR [rbx], ebp
+   0:   29 2f                   sub    DWORD PTR [rdi], ebp
+   0:   29 3b                   sub    DWORD PTR [rbx], edi
+   0:   29 c1                   sub    ecx, eax
+   0:   29 c5                   sub    ebp, eax
+   0:   29 c7                   sub    edi, eax
+   0:   29 d3                   sub    ebx, edx
+   0:   29 df                   sub    edi, ebx
+   0:   29 e3                   sub    ebx, esp
+   0:   29 e5                   sub    ebp, esp
+   0:   29 e9                   sub    ecx, ebp
+   0:   29 ef                   sub    edi, ebp
+   0:   29 f1                   sub    ecx, esi
+   0:   29 fb                   sub    ebx, edi
+   0:   2b 02                   sub    eax, DWORD PTR [rdx]
+   0:   2b 03                   sub    eax, DWORD PTR [rbx]
+   0:   2b 07                   sub    eax, DWORD PTR [rdi]
+   0:   2b 0b                   sub    ecx, DWORD PTR [rbx]
+   0:   2b 11                   sub    edx, DWORD PTR [rcx]
+   0:   2b 13                   sub    edx, DWORD PTR [rbx]
+   0:   2b 17                   sub    edx, DWORD PTR [rdi]
+   0:   2b 1f                   sub    ebx, DWORD PTR [rdi]
+   0:   2b 29                   sub    ebp, DWORD PTR [rcx]
+   0:   2b 2b                   sub    ebp, DWORD PTR [rbx]
+   0:   2b 2f                   sub    ebp, DWORD PTR [rdi]
+   0:   2b 3b                   sub    edi, DWORD PTR [rbx]
+   0:   2b c1                   sub    eax, ecx
+   0:   2b c5                   sub    eax, ebp
+   0:   2b c7                   sub    eax, edi
+   0:   2b d3                   sub    edx, ebx
+   0:   2b df                   sub    ebx, edi
+   0:   2b e3                   sub    esp, ebx
+   0:   2b e5                   sub    esp, ebp
+   0:   2b e9                   sub    ebp, ecx
+   0:   2b ef                   sub    ebp, edi
+   0:   2b f1                   sub    esi, ecx
+   0:   2b fb                   sub    edi, ebx
+   0:   3b 02                   cmp    eax, DWORD PTR [rdx]
+   0:   3b 03                   cmp    eax, DWORD PTR [rbx]
+   0:   3b 07                   cmp    eax, DWORD PTR [rdi]
+   0:   3b 0b                   cmp    ecx, DWORD PTR [rbx]
+   0:   3b 11                   cmp    edx, DWORD PTR [rcx]
+   0:   3b 13                   cmp    edx, DWORD PTR [rbx]
+   0:   3b 17                   cmp    edx, DWORD PTR [rdi]
+   0:   3b 1f                   cmp    ebx, DWORD PTR [rdi]
+   0:   3b 29                   cmp    ebp, DWORD PTR [rcx]
+   0:   3b 2b                   cmp    ebp, DWORD PTR [rbx]
+   0:   3b 2f                   cmp    ebp, DWORD PTR [rdi]
+   0:   3b 3b                   cmp    edi, DWORD PTR [rbx]
+   0:   3b c1                   cmp    eax, ecx
+   0:   3b c5                   cmp    eax, ebp
+   0:   3b c7                   cmp    eax, edi
+   0:   3b d3                   cmp    edx, ebx
+   0:   3b df                   cmp    ebx, edi
+   0:   3b e3                   cmp    esp, ebx
+   0:   3b e5                   cmp    esp, ebp
+   0:   3b e9                   cmp    ebp, ecx
+   0:   3b ef                   cmp    ebp, edi
+   0:   3b f1                   cmp    esi, ecx
+   0:   3b fb                   cmp    edi, ebx
+   0:   43 53                   rex.XB push r11
+   0:   43 59                   rex.XB pop r9
+   0:   43 6d                   rex.XB ins DWORD PTR es:[rdi], dx
+   0:   43 95                   rex.XB xchg r13d, eax
+   0:   43 97                   rex.XB xchg r15d, eax
+   0:   43 9d                   rex.XB popf
+   0:   43 a7                   rex.XB cmps DWORD PTR ds:[rsi], DWORD PTR es:[rdi]
+   0:   43 ad                   rex.XB lods eax, DWORD PTR ds:[rsi]
+   0:   43 ef                   rex.XB out dx, eax
+   0:   43 f1                   rex.XB int1
+   0:   43 fb                   rex.XB sti
+   0:   47 53                   rex.RXB push r11
+   0:   47 59                   rex.RXB pop r9
+   0:   47 6d                   rex.RXB ins DWORD PTR es:[rdi], dx
+   0:   47 95                   rex.RXB xchg r13d, eax
+   0:   47 97                   rex.RXB xchg r15d, eax
+   0:   47 9d                   rex.RXB popf
+   0:   47 a7                   rex.RXB cmps DWORD PTR ds:[rsi], DWORD PTR es:[rdi]
+   0:   47 ad                   rex.RXB lods eax, DWORD PTR ds:[rsi]
+   0:   47 ef                   rex.RXB out dx, eax
+   0:   47 f1                   rex.RXB int1
+   0:   47 fb                   rex.RXB sti
+   0:   49 53                   rex.WB push r11
+   0:   49 59                   rex.WB pop r9
+   0:   49 6d                   rex.WB ins DWORD PTR es:[rdi], dx
+   0:   49 95                   xchg   r13, rax
+   0:   49 97                   xchg   r15, rax
+   0:   49 9d                   rex.WB popf
+   0:   49 a7                   rex.WB cmps QWORD PTR ds:[rsi], QWORD PTR es:[rdi]
+   0:   49 ad                   rex.WB lods rax, QWORD PTR ds:[rsi]
+   0:   49 ef                   rex.WB out dx, eax
+   0:   49 f1                   rex.WB int1
+   0:   49 fb                   rex.WB sti
+   0:   4f 53                   rex.WRXB push r11
+   0:   4f 59                   rex.WRXB pop r9
+   0:   4f 6d                   rex.WRXB ins DWORD PTR es:[rdi], dx
+   0:   4f 95                   rex.WRXB xchg r13, rax
+   0:   4f 97                   rex.WRXB xchg r15, rax
+   0:   4f 9d                   rex.WRXB popf
+   0:   4f a7                   rex.WRXB cmps QWORD PTR ds:[rsi], QWORD PTR es:[rdi]
+   0:   4f ad                   rex.WRXB lods rax, QWORD PTR ds:[rsi]
+   0:   4f ef                   rex.WRXB out dx, eax
+   0:   4f f1                   rex.WRXB int1
+   0:   4f fb                   rex.WRXB sti
+   0:   65 53                   gs push rbx
+   0:   65 59                   gs pop rcx
+   0:   65 6d                   gs ins DWORD PTR es:[rdi], dx
+   0:   65 95                   gs xchg ebp, eax
+   0:   65 97                   gs xchg edi, eax
+   0:   65 9d                   gs popf
+   0:   65 a7                   cmps   DWORD PTR gs:[rsi], DWORD PTR es:[rdi]
+   0:   65 ad                   lods   eax, DWORD PTR gs:[rsi]
+   0:   65 ef                   gs out dx, eax
+   0:   65 f1                   gs int1
+   0:   65 fb                   gs sti
+   0:   67 53                   addr32 push rbx
+   0:   67 59                   addr32 pop rcx
+   0:   67 6d                   ins    DWORD PTR es:[edi], dx
+   0:   67 95                   addr32 xchg ebp, eax
+   0:   67 97                   addr32 xchg edi, eax
+   0:   67 9d                   addr32 popf
+   0:   67 a7                   cmps   DWORD PTR ds:[esi], DWORD PTR es:[edi]
+   0:   67 ad                   lods   eax, DWORD PTR ds:[esi]
+   0:   67 ef                   addr32 out dx, eax
+   0:   67 f1                   addr32 int1
+   0:   67 fb                   addr32 sti
+   0:   71 02                   jno    0x4
+   0:   71 03                   jno    0x5
+   0:   71 05                   jno    0x7
+   0:   71 07                   jno    0x9
+   0:   71 0b                   jno    0xd
+   0:   71 0d                   jno    0xf
+   0:   71 11                   jno    0x13
+   0:   71 13                   jno    0x15
+   0:   71 17                   jno    0x19
+   0:   71 1d                   jno    0x1f
+   0:   71 1f                   jno    0x21
+   0:   71 25                   jno    0x27
+   0:   71 29                   jno    0x2b
+   0:   71 2b                   jno    0x2d
+   0:   71 2f                   jno    0x31
+   0:   71 35                   jno    0x37
+   0:   71 3b                   jno    0x3d
+   0:   71 3d                   jno    0x3f
+   0:   71 43                   jno    0x45
+   0:   71 47                   jno    0x49
+   0:   71 49                   jno    0x4b
+   0:   71 4f                   jno    0x51
+   0:   71 53                   jno    0x55
+   0:   71 59                   jno    0x5b
+   0:   71 61                   jno    0x63
+   0:   71 65                   jno    0x67
+   0:   71 67                   jno    0x69
+   0:   71 6b                   jno    0x6d
+   0:   71 6d                   jno    0x6f
+   0:   71 71                   jno    0x73
+   0:   71 7f                   jno    0x81
+   0:   71 83                   jno    0xffffffffffffff85
+   0:   71 89                   jno    0xffffffffffffff8b
+   0:   71 8b                   jno    0xffffffffffffff8d
+   0:   71 95                   jno    0xffffffffffffff97
+   0:   71 97                   jno    0xffffffffffffff99
+   0:   71 9d                   jno    0xffffffffffffff9f
+   0:   71 a3                   jno    0xffffffffffffffa5
+   0:   71 a7                   jno    0xffffffffffffffa9
+   0:   71 ad                   jno    0xffffffffffffffaf
+   0:   71 b3                   jno    0xffffffffffffffb5
+   0:   71 b5                   jno    0xffffffffffffffb7
+   0:   71 bf                   jno    0xffffffffffffffc1
+   0:   71 c1                   jno    0xffffffffffffffc3
+   0:   71 c5                   jno    0xffffffffffffffc7
+   0:   71 c7                   jno    0xffffffffffffffc9
+   0:   71 d3                   jno    0xffffffffffffffd5
+   0:   71 df                   jno    0xffffffffffffffe1
+   0:   71 e3                   jno    0xffffffffffffffe5
+   0:   71 e5                   jno    0xffffffffffffffe7
+   0:   71 e9                   jno    0xffffffffffffffeb
+   0:   71 ef                   jno    0xfffffffffffffff1
+   0:   71 f1                   jno    0xfffffffffffffff3
+   0:   71 fb                   jno    0xfffffffffffffffd
+   0:   7f 02                   jg     0x4
+   0:   7f 03                   jg     0x5
+   0:   7f 05                   jg     0x7
+   0:   7f 07                   jg     0x9
+   0:   7f 0b                   jg     0xd
+   0:   7f 0d                   jg     0xf
+   0:   7f 11                   jg     0x13
+   0:   7f 13                   jg     0x15
+   0:   7f 17                   jg     0x19
+   0:   7f 1d                   jg     0x1f
+   0:   7f 1f                   jg     0x21
+   0:   7f 25                   jg     0x27
+   0:   7f 29                   jg     0x2b
+   0:   7f 2b                   jg     0x2d
+   0:   7f 2f                   jg     0x31
+   0:   7f 35                   jg     0x37
+   0:   7f 3b                   jg     0x3d
+   0:   7f 3d                   jg     0x3f
+   0:   7f 43                   jg     0x45
+   0:   7f 47                   jg     0x49
+   0:   7f 49                   jg     0x4b
+   0:   7f 4f                   jg     0x51
+   0:   7f 53                   jg     0x55
+   0:   7f 59                   jg     0x5b
+   0:   7f 61                   jg     0x63
+   0:   7f 65                   jg     0x67
+   0:   7f 67                   jg     0x69
+   0:   7f 6b                   jg     0x6d
+   0:   7f 6d                   jg     0x6f
+   0:   7f 71                   jg     0x73
+   0:   7f 7f                   jg     0x81
+   0:   7f 83                   jg     0xffffffffffffff85
+   0:   7f 89                   jg     0xffffffffffffff8b
+   0:   7f 8b                   jg     0xffffffffffffff8d
+   0:   7f 95                   jg     0xffffffffffffff97
+   0:   7f 97                   jg     0xffffffffffffff99
+   0:   7f 9d                   jg     0xffffffffffffff9f
+   0:   7f a3                   jg     0xffffffffffffffa5
+   0:   7f a7                   jg     0xffffffffffffffa9
+   0:   7f ad                   jg     0xffffffffffffffaf
+   0:   7f b3                   jg     0xffffffffffffffb5
+   0:   7f b5                   jg     0xffffffffffffffb7
+   0:   7f bf                   jg     0xffffffffffffffc1
+   0:   7f c1                   jg     0xffffffffffffffc3
+   0:   7f c5                   jg     0xffffffffffffffc7
+   0:   7f c7                   jg     0xffffffffffffffc9
+   0:   7f d3                   jg     0xffffffffffffffd5
+   0:   7f df                   jg     0xffffffffffffffe1
+   0:   7f e3                   jg     0xffffffffffffffe5
+   0:   7f e5                   jg     0xffffffffffffffe7
+   0:   7f e9                   jg     0xffffffffffffffeb
+   0:   7f ef                   jg     0xfffffffffffffff1
+   0:   7f f1                   jg     0xfffffffffffffff3
+   0:   7f fb                   jg     0xfffffffffffffffd
+   0:   89 02                   mov    DWORD PTR [rdx], eax
+   0:   89 03                   mov    DWORD PTR [rbx], eax
+   0:   89 07                   mov    DWORD PTR [rdi], eax
+   0:   89 0b                   mov    DWORD PTR [rbx], ecx
+   0:   89 11                   mov    DWORD PTR [rcx], edx
+   0:   89 13                   mov    DWORD PTR [rbx], edx
+   0:   89 17                   mov    DWORD PTR [rdi], edx
+   0:   89 1f                   mov    DWORD PTR [rdi], ebx
+   0:   89 29                   mov    DWORD PTR [rcx], ebp
+   0:   89 2b                   mov    DWORD PTR [rbx], ebp
+   0:   89 2f                   mov    DWORD PTR [rdi], ebp
+   0:   89 3b                   mov    DWORD PTR [rbx], edi
+   0:   89 c1                   mov    ecx, eax
+   0:   89 c5                   mov    ebp, eax
+   0:   89 c7                   mov    edi, eax
+   0:   89 d3                   mov    ebx, edx
+   0:   89 df                   mov    edi, ebx
+   0:   89 e3                   mov    ebx, esp
+   0:   89 e5                   mov    ebp, esp
+   0:   89 e9                   mov    ecx, ebp
+   0:   89 ef                   mov    edi, ebp
+   0:   89 f1                   mov    ecx, esi
+   0:   89 fb                   mov    ebx, edi
+   0:   8b 02                   mov    eax, DWORD PTR [rdx]
+   0:   8b 03                   mov    eax, DWORD PTR [rbx]
+   0:   8b 07                   mov    eax, DWORD PTR [rdi]
+   0:   8b 0b                   mov    ecx, DWORD PTR [rbx]
+   0:   8b 11                   mov    edx, DWORD PTR [rcx]
+   0:   8b 13                   mov    edx, DWORD PTR [rbx]
+   0:   8b 17                   mov    edx, DWORD PTR [rdi]
+   0:   8b 1f                   mov    ebx, DWORD PTR [rdi]
+   0:   8b 29                   mov    ebp, DWORD PTR [rcx]
+   0:   8b 2b                   mov    ebp, DWORD PTR [rbx]
+   0:   8b 2f                   mov    ebp, DWORD PTR [rdi]
+   0:   8b 3b                   mov    edi, DWORD PTR [rbx]
+   0:   8b c1                   mov    eax, ecx
+   0:   8b c5                   mov    eax, ebp
+   0:   8b c7                   mov    eax, edi
+   0:   8b d3                   mov    edx, ebx
+   0:   8b df                   mov    ebx, edi
+   0:   8b e3                   mov    esp, ebx
+   0:   8b e5                   mov    esp, ebp
+   0:   8b e9                   mov    ebp, ecx
+   0:   8b ef                   mov    ebp, edi
+   0:   8b f1                   mov    esi, ecx
+   0:   8b fb                   mov    edi, ebx
+   0:   b3 02                   mov    bl, 0x2
+   0:   b3 03                   mov    bl, 0x3
+   0:   b3 05                   mov    bl, 0x5
+   0:   b3 07                   mov    bl, 0x7
+   0:   b3 0b                   mov    bl, 0xb
+   0:   b3 0d                   mov    bl, 0xd
+   0:   b3 11                   mov    bl, 0x11
+   0:   b3 13                   mov    bl, 0x13
+   0:   b3 17                   mov    bl, 0x17
+   0:   b3 1d                   mov    bl, 0x1d
+   0:   b3 1f                   mov    bl, 0x1f
+   0:   b3 25                   mov    bl, 0x25
+   0:   b3 29                   mov    bl, 0x29
+   0:   b3 2b                   mov    bl, 0x2b
+   0:   b3 2f                   mov    bl, 0x2f
+   0:   b3 35                   mov    bl, 0x35
+   0:   b3 3b                   mov    bl, 0x3b
+   0:   b3 3d                   mov    bl, 0x3d
+   0:   b3 43                   mov    bl, 0x43
+   0:   b3 47                   mov    bl, 0x47
+   0:   b3 49                   mov    bl, 0x49
+   0:   b3 4f                   mov    bl, 0x4f
+   0:   b3 53                   mov    bl, 0x53
+   0:   b3 59                   mov    bl, 0x59
+   0:   b3 61                   mov    bl, 0x61
+   0:   b3 65                   mov    bl, 0x65
+   0:   b3 67                   mov    bl, 0x67
+   0:   b3 6b                   mov    bl, 0x6b
+   0:   b3 6d                   mov    bl, 0x6d
+   0:   b3 71                   mov    bl, 0x71
+   0:   b3 7f                   mov    bl, 0x7f
+   0:   b3 83                   mov    bl, 0x83
+   0:   b3 89                   mov    bl, 0x89
+   0:   b3 8b                   mov    bl, 0x8b
+   0:   b3 95                   mov    bl, 0x95
+   0:   b3 97                   mov    bl, 0x97
+   0:   b3 9d                   mov    bl, 0x9d
+   0:   b3 a3                   mov    bl, 0xa3
+   0:   b3 a7                   mov    bl, 0xa7
+   0:   b3 ad                   mov    bl, 0xad
+   0:   b3 b3                   mov    bl, 0xb3
+   0:   b3 b5                   mov    bl, 0xb5
+   0:   b3 bf                   mov    bl, 0xbf
+   0:   b3 c1                   mov    bl, 0xc1
+   0:   b3 c5                   mov    bl, 0xc5
+   0:   b3 c7                   mov    bl, 0xc7
+   0:   b3 d3                   mov    bl, 0xd3
+   0:   b3 df                   mov    bl, 0xdf
+   0:   b3 e3                   mov    bl, 0xe3
+   0:   b3 e5                   mov    bl, 0xe5
+   0:   b3 e9                   mov    bl, 0xe9
+   0:   b3 ef                   mov    bl, 0xef
+   0:   b3 f1                   mov    bl, 0xf1
+   0:   b3 fb                   mov    bl, 0xfb
+   0:   b5 02                   mov    ch, 0x2
+   0:   b5 03                   mov    ch, 0x3
+   0:   b5 05                   mov    ch, 0x5
+   0:   b5 07                   mov    ch, 0x7
+   0:   b5 0b                   mov    ch, 0xb
+   0:   b5 0d                   mov    ch, 0xd
+   0:   b5 11                   mov    ch, 0x11
+   0:   b5 13                   mov    ch, 0x13
+   0:   b5 17                   mov    ch, 0x17
+   0:   b5 1d                   mov    ch, 0x1d
+   0:   b5 1f                   mov    ch, 0x1f
+   0:   b5 25                   mov    ch, 0x25
+   0:   b5 29                   mov    ch, 0x29
+   0:   b5 2b                   mov    ch, 0x2b
+   0:   b5 2f                   mov    ch, 0x2f
+   0:   b5 35                   mov    ch, 0x35
+   0:   b5 3b                   mov    ch, 0x3b
+   0:   b5 3d                   mov    ch, 0x3d
+   0:   b5 43                   mov    ch, 0x43
+   0:   b5 47                   mov    ch, 0x47
+   0:   b5 49                   mov    ch, 0x49
+   0:   b5 4f                   mov    ch, 0x4f
+   0:   b5 53                   mov    ch, 0x53
+   0:   b5 59                   mov    ch, 0x59
+   0:   b5 61                   mov    ch, 0x61
+   0:   b5 65                   mov    ch, 0x65
+   0:   b5 67                   mov    ch, 0x67
+   0:   b5 6b                   mov    ch, 0x6b
+   0:   b5 6d                   mov    ch, 0x6d
+   0:   b5 71                   mov    ch, 0x71
+   0:   b5 7f                   mov    ch, 0x7f
+   0:   b5 83                   mov    ch, 0x83
+   0:   b5 89                   mov    ch, 0x89
+   0:   b5 8b                   mov    ch, 0x8b
+   0:   b5 95                   mov    ch, 0x95
+   0:   b5 97                   mov    ch, 0x97
+   0:   b5 9d                   mov    ch, 0x9d
+   0:   b5 a3                   mov    ch, 0xa3
+   0:   b5 a7                   mov    ch, 0xa7
+   0:   b5 ad                   mov    ch, 0xad
+   0:   b5 b3                   mov    ch, 0xb3
+   0:   b5 b5                   mov    ch, 0xb5
+   0:   b5 bf                   mov    ch, 0xbf
+   0:   b5 c1                   mov    ch, 0xc1
+   0:   b5 c5                   mov    ch, 0xc5
+   0:   b5 c7                   mov    ch, 0xc7
+   0:   b5 d3                   mov    ch, 0xd3
+   0:   b5 df                   mov    ch, 0xdf
+   0:   b5 e3                   mov    ch, 0xe3
+   0:   b5 e5                   mov    ch, 0xe5
+   0:   b5 e9                   mov    ch, 0xe9
+   0:   b5 ef                   mov    ch, 0xef
+   0:   b5 f1                   mov    ch, 0xf1
+   0:   b5 fb                   mov    ch, 0xfb
+   0:   d3 02                   rol    DWORD PTR [rdx], cl
+   0:   d3 03                   rol    DWORD PTR [rbx], cl
+   0:   d3 07                   rol    DWORD PTR [rdi], cl
+   0:   d3 0b                   ror    DWORD PTR [rbx], cl
+   0:   d3 11                   rcl    DWORD PTR [rcx], cl
+   0:   d3 13                   rcl    DWORD PTR [rbx], cl
+   0:   d3 17                   rcl    DWORD PTR [rdi], cl
+   0:   d3 1f                   rcr    DWORD PTR [rdi], cl
+   0:   d3 29                   shr    DWORD PTR [rcx], cl
+   0:   d3 2b                   shr    DWORD PTR [rbx], cl
+   0:   d3 2f                   shr    DWORD PTR [rdi], cl
+   0:   d3 3b                   sar    DWORD PTR [rbx], cl
+   0:   d3 c1                   rol    ecx, cl
+   0:   d3 c5                   rol    ebp, cl
+   0:   d3 c7                   rol    edi, cl
+   0:   d3 d3                   rcl    ebx, cl
+   0:   d3 df                   rcr    edi, cl
+   0:   d3 e3                   shl    ebx, cl
+   0:   d3 e5                   shl    ebp, cl
+   0:   d3 e9                   shr    ecx, cl
+   0:   d3 ef                   shr    edi, cl
+   0:   d3 f1                   shl    ecx, cl
+   0:   d3 fb                   sar    ebx, cl
+   0:   df 02                   fild   WORD PTR [rdx]
+   0:   df 03                   fild   WORD PTR [rbx]
+   0:   df 07                   fild   WORD PTR [rdi]
+   0:   df 0b                   fisttp WORD PTR [rbx]
+   0:   df 11                   fist   WORD PTR [rcx]
+   0:   df 13                   fist   WORD PTR [rbx]
+   0:   df 17                   fist   WORD PTR [rdi]
+   0:   df 1f                   fistp  WORD PTR [rdi]
+   0:   df 29                   fild   QWORD PTR [rcx]
+   0:   df 2b                   fild   QWORD PTR [rbx]
+   0:   df 2f                   fild   QWORD PTR [rdi]
+   0:   df 3b                   fistp  QWORD PTR [rbx]
+   0:   df c1                   ffreep st(1)
+   0:   df c5                   ffreep st(5)
+   0:   df c7                   ffreep st(7)
+   0:   df e9                   fucomip st, st(1)
+   0:   df ef                   fucomip st, st(7)
+   0:   df f1                   fcomip st, st(1)
+   0:   e3 02                   jrcxz  0x4
+   0:   e3 03                   jrcxz  0x5
+   0:   e3 05                   jrcxz  0x7
+   0:   e3 07                   jrcxz  0x9
+   0:   e3 0b                   jrcxz  0xd
+   0:   e3 0d                   jrcxz  0xf
+   0:   e3 11                   jrcxz  0x13
+   0:   e3 13                   jrcxz  0x15
+   0:   e3 17                   jrcxz  0x19
+   0:   e3 1d                   jrcxz  0x1f
+   0:   e3 1f                   jrcxz  0x21
+   0:   e3 25                   jrcxz  0x27
+   0:   e3 29                   jrcxz  0x2b
+   0:   e3 2b                   jrcxz  0x2d
+   0:   e3 2f                   jrcxz  0x31
+   0:   e3 35                   jrcxz  0x37
+   0:   e3 3b                   jrcxz  0x3d
+   0:   e3 3d                   jrcxz  0x3f
+   0:   e3 43                   jrcxz  0x45
+   0:   e3 47                   jrcxz  0x49
+   0:   e3 49                   jrcxz  0x4b
+   0:   e3 4f                   jrcxz  0x51
+   0:   e3 53                   jrcxz  0x55
+   0:   e3 59                   jrcxz  0x5b
+   0:   e3 61                   jrcxz  0x63
+   0:   e3 65                   jrcxz  0x67
+   0:   e3 67                   jrcxz  0x69
+   0:   e3 6b                   jrcxz  0x6d
+   0:   e3 6d                   jrcxz  0x6f
+   0:   e3 71                   jrcxz  0x73
+   0:   e3 7f                   jrcxz  0x81
+   0:   e3 83                   jrcxz  0xffffffffffffff85
+   0:   e3 89                   jrcxz  0xffffffffffffff8b
+   0:   e3 8b                   jrcxz  0xffffffffffffff8d
+   0:   e3 95                   jrcxz  0xffffffffffffff97
+   0:   e3 97                   jrcxz  0xffffffffffffff99
+   0:   e3 9d                   jrcxz  0xffffffffffffff9f
+   0:   e3 a3                   jrcxz  0xffffffffffffffa5
+   0:   e3 a7                   jrcxz  0xffffffffffffffa9
+   0:   e3 ad                   jrcxz  0xffffffffffffffaf
+   0:   e3 b3                   jrcxz  0xffffffffffffffb5
+   0:   e3 b5                   jrcxz  0xffffffffffffffb7
+   0:   e3 bf                   jrcxz  0xffffffffffffffc1
+   0:   e3 c1                   jrcxz  0xffffffffffffffc3
+   0:   e3 c5                   jrcxz  0xffffffffffffffc7
+   0:   e3 c7                   jrcxz  0xffffffffffffffc9
+   0:   e3 d3                   jrcxz  0xffffffffffffffd5
+   0:   e3 df                   jrcxz  0xffffffffffffffe1
+   0:   e3 e3                   jrcxz  0xffffffffffffffe5
+   0:   e3 e5                   jrcxz  0xffffffffffffffe7
+   0:   e3 e9                   jrcxz  0xffffffffffffffeb
+   0:   e3 ef                   jrcxz  0xfffffffffffffff1
+   0:   e3 f1                   jrcxz  0xfffffffffffffff3
+   0:   e3 fb                   jrcxz  0xfffffffffffffffd
+   0:   e5 02                   in     eax, 0x2
+   0:   e5 03                   in     eax, 0x3
+   0:   e5 05                   in     eax, 0x5
+   0:   e5 07                   in     eax, 0x7
+   0:   e5 0b                   in     eax, 0xb
+   0:   e5 0d                   in     eax, 0xd
+   0:   e5 11                   in     eax, 0x11
+   0:   e5 13                   in     eax, 0x13
+   0:   e5 17                   in     eax, 0x17
+   0:   e5 1d                   in     eax, 0x1d
+   0:   e5 1f                   in     eax, 0x1f
+   0:   e5 25                   in     eax, 0x25
+   0:   e5 29                   in     eax, 0x29
+   0:   e5 2b                   in     eax, 0x2b
+   0:   e5 2f                   in     eax, 0x2f
+   0:   e5 35                   in     eax, 0x35
+   0:   e5 3b                   in     eax, 0x3b
+   0:   e5 3d                   in     eax, 0x3d
+   0:   e5 43                   in     eax, 0x43
+   0:   e5 47                   in     eax, 0x47
+   0:   e5 49                   in     eax, 0x49
+   0:   e5 4f                   in     eax, 0x4f
+   0:   e5 53                   in     eax, 0x53
+   0:   e5 59                   in     eax, 0x59
+   0:   e5 61                   in     eax, 0x61
+   0:   e5 65                   in     eax, 0x65
+   0:   e5 67                   in     eax, 0x67
+   0:   e5 6b                   in     eax, 0x6b
+   0:   e5 6d                   in     eax, 0x6d
+   0:   e5 71                   in     eax, 0x71
+   0:   e5 7f                   in     eax, 0x7f
+   0:   e5 83                   in     eax, 0x83
+   0:   e5 89                   in     eax, 0x89
+   0:   e5 8b                   in     eax, 0x8b
+   0:   e5 95                   in     eax, 0x95
+   0:   e5 97                   in     eax, 0x97
+   0:   e5 9d                   in     eax, 0x9d
+   0:   e5 a3                   in     eax, 0xa3
+   0:   e5 a7                   in     eax, 0xa7
+   0:   e5 ad                   in     eax, 0xad
+   0:   e5 b3                   in     eax, 0xb3
+   0:   e5 b5                   in     eax, 0xb5
+   0:   e5 bf                   in     eax, 0xbf
+   0:   e5 c1                   in     eax, 0xc1
+   0:   e5 c5                   in     eax, 0xc5
+   0:   e5 c7                   in     eax, 0xc7
+   0:   e5 d3                   in     eax, 0xd3
+   0:   e5 df                   in     eax, 0xdf
+   0:   e5 e3                   in     eax, 0xe3
+   0:   e5 e5                   in     eax, 0xe5
+   0:   e5 e9                   in     eax, 0xe9
+   0:   e5 ef                   in     eax, 0xef
+   0:   e5 f1                   in     eax, 0xf1
+   0:   e5 fb                   in     eax, 0xfb
+---

@@ -1,0 +1,1 @@
+Hero{dummy_flag}

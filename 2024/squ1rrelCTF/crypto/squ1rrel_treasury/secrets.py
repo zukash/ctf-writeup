@@ -1,0 +1,2 @@
+KEY = b"KEYKEYKEYKEYKEYK"
+FLAG = b"squ1rrel{XXXXXXXX}"

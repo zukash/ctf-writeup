@@ -1,0 +1,5 @@
+- 202X/12/13
+I set the password for my bank account, but it's a random string, so I'm afraid I'll forget it...
+Oh, I know! I'll save it in the `flag` file just in case I forget it!
+- 202X/12/14
+This is just flavor text and is not related to solving the problem!

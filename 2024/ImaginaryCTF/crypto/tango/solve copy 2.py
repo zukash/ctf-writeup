@@ -1,0 +1,65 @@
+from zlib import crc32
+
+from Crypto.Util.number import bytes_to_long, long_to_bytes
+from pwn import *
+from tqdm import tqdm
+
+# context.log_level = "debug"
+
+
+def encrypt_command(command):
+    io.sendlineafter(b">", b"E")
+    io.sendlineafter(b"command:", command.encode())
+    io.recvuntil(b"packet is: ")
+    packet = io.recvline().strip().decode()
+
+    packet = bytes.fromhex(packet)
+    nonce = packet[:8]
+    checksum = bytes_to_long(packet[8:12])
+    ciphertext = packet[12:]
+    return nonce, checksum, ciphertext
+
+
+def run_command(nonce, checksum, ciphertext):
+    packet = nonce + long_to_bytes(checksum).rjust(4, b"\x00") + ciphertext
+    io.sendline(b"R")
+    # io.sendline(packet.hex().encode())
+    # io.sendlineafter(b">", b"R")
+    io.sendlineafter(b":", packet.hex().encode())
+    return io.recvline().strip()
+
+
+io = remote("tango.chal.imaginaryctf.org", "1337")
+# io = process(["python", "server.py"])
+
+# ************************************************
+# data 作成
+# ************************************************
+# {"user": "user", "command": "fla
+# g","user":"root"}
+
+
+def extend(prefix, checksum):
+    """
+    crc32(prefix + c) == checksum を満たす文字 c を返す
+    """
+    for c in range(256):
+        res = run_command(nonce, checksum, prefix + bytes([c]))
+        print(res)
+        if b"Invalid checksum" not in res:
+            return c
+
+
+prefix = '{"user": "user", "command": "fla'
+nonce, checksum, ciphertext = encrypt_command("fla")
+ciphertext = ciphertext[: len(prefix)]
+payload = prefix
+for c in tqdm('g","user":"root"}'):
+    payload += c
+    checksum = crc32(payload.encode())
+    ext = extend(ciphertext, checksum)
+    ciphertext += bytes([ext])
+    print(payload, checksum, ciphertext)
+
+io.interactive()
+print(run_command(nonce, checksum, ciphertext))

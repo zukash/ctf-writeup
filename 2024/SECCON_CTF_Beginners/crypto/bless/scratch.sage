@@ -1,0 +1,36 @@
+p = 0x1A0111EA397FE69A4B1BA7B6434BACD764774B84F38512BF6730D2A0F6B0F6241EABFFFEB153FFFFB9FEFFFFFFFFAAAB
+q = 0x73EDA753299D7D483339D80809A1D80553BDA402FFFE5BFEFFFFFFFF00000001
+F1 = GF(p)
+E1 = EllipticCurve(F1, (0, 4))
+G1 = E1(
+    0x17F1D3A73197D7942695638C4FA9AC0FC3688C4F9774B905A14E3A3F171BAC586C55E83FF97A1AEFFB3AF00ADB22C6BB,
+    0x08B3F481E3AAA0F1A09E30ED741D8AE4FCF5E095D5D00AF600DB18CB2C04B3EDD03CC744A2888AE40CAA232946C5E7E1,
+)
+
+F2 = GF(p ^ 2, "x", modulus=x ^ 2 + 1)
+E2 = EllipticCurve(F2, (0, 4 * (1 + F2.gen())))
+G2 = E2.random_point()
+
+print(F2)
+print(F2.random_element())
+print(F2.gen())
+x = F2.gen()
+print(x * x + 1)
+
+print(G2)
+print(3 * G2)
+Q = 3 * G2
+
+print(Q.weil_pairing(G2, 3))
+
+
+def F2_to_F12(coeffs):
+    assert len(coeffs) == 2
+    c = coeffs[0]
+    d = coeffs[1]
+    x = c + d * i12
+
+    return x
+
+
+# print(Q.discrete_log(G2))
